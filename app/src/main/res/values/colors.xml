@@ -9,4 +9,5 @@
     <color name="primaryTextColor">#ffffff</color>
     <color name="secondaryTextColor">#fafafa</color>
     <color name="ic_launcher_background">#FEFEFE</color>
+    <color name="lightBlue">#56A9E5</color>
 </resources>

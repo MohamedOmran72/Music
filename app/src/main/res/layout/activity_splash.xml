@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.splash.SplashActivity">
+
+    <ImageView
+        android:id="@+id/image_splash"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/piano_splash"
+        android:contentDescription="@string/image_splash_description" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/image_splash"
+        android:text="@string/music"
+        android:textColor="@color/lightBlue"
+        android:textSize="@dimen/_32ssp" />
+
+
+</RelativeLayout>

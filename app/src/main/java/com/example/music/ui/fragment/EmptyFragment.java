@@ -20,7 +20,7 @@ public class EmptyFragment extends BaseFragment {
                              Bundle savedInstanceState) {
 
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.activity_main, container, false);
+        return inflater.inflate(R.layout.activity_splash, container, false);
     }
 
     @Override
