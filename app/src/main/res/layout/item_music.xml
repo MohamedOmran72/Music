@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/_16dp">
+
+    <ImageView
+        android:id="@+id/image_music"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/image_music_item_description"
+        app:srcCompat="@drawable/piano_splash" />
+
+    <TextView
+        android:id="@+id/text_music_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/text_music_author_name"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/google_sans_bold"
+        android:text="@string/music_item_name" />
+
+    <TextView
+        android:id="@+id/text_music_author_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image_music"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_toEndOf="@+id/image_music"
+        android:fontFamily="@font/google_sans"
+        android:text="@string/music_item_author_name"
+        android:textSize="@dimen/_8ssp" />
+
+    <CheckBox
+        android:id="@+id/check_favorite"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:layout_alignParentEnd="true"
+        android:button="@drawable/ic_favorite_checkbox"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>
