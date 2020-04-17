@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_140sdp"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_8dp"
+    android:clickable="true"
+    android:elevation="@dimen/_4dp"
+    android:focusable="true"
+    android:foreground="?android:selectableItemBackground"
+    cardview:cardCornerRadius="@dimen/_4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_16dp">
+
+        <ImageView
+            android:id="@+id/image_music"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:contentDescription="@string/image_music_item_description"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_foreground" />
+
+        <ImageView
+            android:id="@+id/image_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/image_music_item_description"
+            android:src="@drawable/ic_play_arrow_black_24dp" />
+
+        <TextView
+            android:id="@+id/text_music_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="monospace"
+            android:gravity="start"
+            android:maxLines="2"
+            android:text="@string/music_item_name"
+            android:textColor="@color/secondaryDarkColor"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_below="@id/image_music"/>
+
+        <TextView
+            android:id="@+id/text_music_author_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_music_name"
+            android:ellipsize="end"
+            android:fontFamily="monospace"
+            android:gravity="start"
+            android:maxLines="2"
+            android:text="@string/music_item_author_name"
+            android:textColor="@color/secondaryLightColor"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

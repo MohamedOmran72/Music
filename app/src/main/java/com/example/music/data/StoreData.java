@@ -4,6 +4,14 @@ public class StoreData {
     private String mSongTitle;
     private String mSongAuthorName;
     private int mSongImageId;
+    private int mPlayImageId;
+
+    public StoreData(String mSongTitle, String mSongAuthorName, int mSongImageId, int mPlayImageId) {
+        this.mSongTitle = mSongTitle;
+        this.mSongAuthorName = mSongAuthorName;
+        this.mSongImageId = mSongImageId;
+        this.mPlayImageId = mPlayImageId;
+    }
 
     public StoreData(String mSongTitle, String mSongAuthorName, int mSongImageId) {
         this.mSongTitle = mSongTitle;
@@ -35,4 +43,11 @@ public class StoreData {
         this.mSongImageId = mSongImageId;
     }
 
+    public int getPlayImageId() {
+        return mPlayImageId;
+    }
+
+    public void setPlayImageId(int mPlayImageId) {
+        this.mPlayImageId = mPlayImageId;
+    }
 }
