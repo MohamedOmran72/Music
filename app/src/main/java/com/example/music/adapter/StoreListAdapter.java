@@ -14,6 +14,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.music.R;
 import com.example.music.data.StoreData;
 import com.example.music.ui.activity.BaseActivity;
+import com.example.music.ui.fragment.home.PlaySongFragment;
+import com.example.music.utilities.HelperMethod;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,7 +26,7 @@ import butterknife.ButterKnife;
 public class StoreListAdapter extends RecyclerView.Adapter<StoreListAdapter.ViewHolder> {
 
     private Context mContext;
-    private Activity mActivity;
+    private BaseActivity mActivity;
     private List<StoreData> mSongsDataList = new ArrayList<>();
 
     public StoreListAdapter(Activity mActivity, List<StoreData> mSongsDataList) {
@@ -57,6 +59,10 @@ public class StoreListAdapter extends RecyclerView.Adapter<StoreListAdapter.View
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                PlaySongFragment playSongFragment =
+                        new PlaySongFragment(mSongsDataList.get(position).getSongTitle(), mSongsDataList.get(position).getSongImageId());
+                HelperMethod.replaceFragment(mActivity.getSupportFragmentManager(), R.id.frame_home_fragment_container, playSongFragment);
 
             }
         });

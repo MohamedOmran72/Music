@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.home.PlaySongFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/Toolbar"
+        android:background="@color/primaryDarkColor">
+
+        <ImageView
+            android:id="@+id/image_back_toolbar"
+            style="@style/Toolbar.Image" />
+
+        <TextView
+            android:id="@+id/text_toolbar"
+            style="@style/Toolbar.Text"
+            android:text="@string/music_item_name" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/image_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:contentDescription="@string/image_music_item_description"
+        android:src="@drawable/piano_splash" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_4dp"
+        android:layout_below="@id/image_music"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:progressDrawable="@color/secondaryDarkColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progress_bar"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/button_back"
+            style="@style/PlayButton"
+            android:src="@drawable/ic_skip_previous_black_24dp" />
+
+        <ImageView
+            android:id="@+id/button_play"
+            style="@style/PlayButton"
+            android:layout_marginStart="@dimen/_24sdp"
+            android:layout_marginEnd="@dimen/_24sdp"
+            android:src="@drawable/ic_play_arrow_black_24dp" />
+
+        <ImageView
+            android:id="@+id/button_next"
+            style="@style/PlayButton"
+            android:src="@drawable/ic_skip_next_black_24dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
