@@ -9,9 +9,9 @@
 * Grid View
 
 ## Screen shots
-![first image](screenShots/Splash.png)  ![second image](screenShots/Recent.png)
-![third image](screenShots/Favorites.png) ![fourth image](screenShots/Playlists.png)
-![fifth image](screenShots/Store.png)  ![sixth image](screenShots/MusicItem.png)
+<img src="screenShots/Splash.png" height="420" width="240" hspace="20"> <img src="screenShots/Recent.png" height="420" width="240" hspace="20">
+<img src="screenShots/Favorites.png" height="420" width="240" hspace="20"> <img src="screenShots/Playlists.png" height="420" width="240" hspace="20">
+<img src="screenShots/Store.png" height="420" width="240" hspace="20"> <img src="screenShots/MusicItem.png" height="420" width="240" hspace="20">
 
 ## Udacity review
-![first image](screenShots/UdacityReview.png)
+<img src="screenShots/UdacityReview.png" height="220" width="420" hspace="20">
